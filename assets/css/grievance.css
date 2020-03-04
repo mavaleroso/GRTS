@@ -1,0 +1,300 @@
+@font-face {
+  font-family: poppins;
+  src: url(font/Poppins-Regular.otf);
+}
+
+@font-face {
+  font-family: redhat;
+  src: url(font/RedHatDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: redhatBold;
+  src: url(font/RedHatDisplay-Bold.ttf);
+}
+
+table.dataTable tbody th,
+table.dataTable tbody td {
+    /*white-space: nowrap;*/
+}
+
+.dataTables_wrapper {
+    font-size: 12px;
+}
+
+
+.action-con {
+  font-size: 15px;
+  /* width: 100px !important; */
+  overflow-x: hidden !important;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.action-con:hover {
+  color: #FC466B;
+}
+
+.tbl-scrollbar::-webkit-scrollbar
+{
+    width: 100px;
+    height: 10px;
+    background-color: gray;
+    color: blue;
+}
+
+
+
+
+.scrollbar-open {
+overflow-y: scroll !important;
+}
+
+
+
+#myModal2 .modal-dialog {
+  margin-top: 100px !important;
+}
+
+.group-ben {
+  position:relative;
+  width: 100%;
+}
+
+.group-ben-md {
+  position:relative;
+  width: 60%;
+}
+
+.group-ben-md2 {
+  position:relative;
+  width: 70%;
+}
+
+
+.group-ben-sm {
+  position:relative;
+  width: 20%;
+}
+
+.group-ben-sm2 {
+  position:relative;
+  width: 50%;
+}
+
+
+#import1 {
+  background-color: #167235;
+  width: 100px;
+  height: 30px;
+  color: #fcfcfc;
+  padding: 0px !important;
+  font-size: 11px;
+}
+
+#import1:hover {
+  background-color: #2A8C4A;
+}
+
+.view-setting {
+  cursor: pointer;
+  display: block;
+  height: 50px;
+  padding: 5px;
+}
+
+.card-height {
+  height: 30px !important;
+}
+
+.setting {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+.setting:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  text-shadow: 0 0 1px #222;
+}
+
+.margin-drop {
+  margin-top: 38px !important;
+}
+
+
+.margin-drop1 {
+  margin-top: 44px !important;
+}
+
+.search-result {
+  font-size: 12px;
+  width: auto !important;
+}
+
+.search-loader {
+  height: 100px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: -40px;
+  margin-bottom: -80px;
+}
+
+.search-location {
+  font-size: 13px;
+  text-align: center;
+}
+
+.search-location a {
+  cursor: pointer;
+  padding: 5px;
+  text-align: left;
+}
+
+.search-location a:hover {
+  background: #eee;
+}
+
+
+.dropdown-menu-arrow {
+  top: -25px;
+  left: -50px;
+  width: 0;
+  height: 0;
+  position: relative;
+}
+
+.dropdown-menu-arrow:before,
+.dropdown-menu-arrow:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 7px 8px;
+  border-style: solid;
+  border-color: transparent;
+  z-index: 1001;
+}
+.dropdown-menu-arrow:after {
+  bottom: -18px;
+  right: -8px;
+  border-bottom-color: #fff;
+}
+.dropdown-menu-arrow:before {
+  bottom: -17px;
+  right: -8px;
+  border-bottom-color: rgba(0,0,0,.15);
+}
+
+#table-modal tr td {
+  padding:5px;
+  /*white-space: nowrap;*/
+  font-size: 13px;
+}
+
+#table-modal th {
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.field-set .col-lg-4, .field-set .col-lg-8, .field-set .col-lg-9, .field-set .col-lg-3, .field-set .col-lg-12, .field-set .col-lg-6 {
+  padding: 0 0 20px 0 !important;
+}
+
+
+.input-txt-dis {
+  cursor: default;
+}
+
+#myModal .modal-footer button {
+  width: 130px;
+}
+
+.btn-choose {
+  background: #3F5EFB;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #fcfcfc;
+  padding: 8px;
+}
+
+.choose-text {
+  border: 1px solid #aaa;
+  padding: 8px;
+  background: #eeee;
+}
+
+.btn-import {
+  background: #3F5EFB;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fcfcfc;
+  padding: 8px;
+}
+
+#tbl-grievance_wrapper {
+  margin-top: 40px;
+}
+
+
+
+.attachment-area {
+  background: #fcfcfc;
+  box-shadow: 0 2px 2px 2px rgba(0,0,0,.2);
+  border-radius: 3px;
+  min-height: 100px;
+}
+.archive {
+  margin-top: 3px;
+}
+
+#progressBar {
+  background: #222;
+  width: 0%;
+  height: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.viewTags {
+  background: #FC466B;
+  color: #fcfcfc;
+  height: 30px;
+  box-shadow: 0 1px 1px 1px #666;
+}
+
+.viewTags span {
+  margin-left: 5px;
+  text-shadow: 0 1px 1px #222;
+}
+
+.viewTags:hover {
+  color: #fcfcfc !important;
+}
+
+.categoriesTags {
+  background: #f8f9fa;
+  box-shadow: 0 1px 2px 2px inset rgba(0,0,0,.3);
+  border-radius: 5px;
+}
+
+.show-tags:active {
+  background: #f1f1f1;
+}
+
+.show-tags.active {
+  background: #f1f1f1;
+}
+
+#tabs, input, select {
+  font-family: poppins !important;
+}
+
+.editable-fields {
+  background: #eee !important;
+  border-radius: 3px !important;
+}

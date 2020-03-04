@@ -1,0 +1,82 @@
+@font-face {
+  font-family: poppins;
+  src: url(font/Poppins-Regular.otf);
+}
+
+@font-face {
+  font-family: redhat;
+  src: url(font/RedHatDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: redhatBold;
+  src: url(font/RedHatDisplay-Bold.ttf);
+}
+
+.dataTables_wrapper, .dataTables_wrapper td, .dataTables_wrapper th  { 
+	font-size: 11px;
+}
+
+#reptabs-1, #reptabs-2, #reptabs-3, #reptabs-4, .ui-tabs-nav {
+  font-family: 'Poppins' !important;
+}
+
+#reportTab ul li {
+  font-size: 11px;
+}
+
+.monthSelector {
+    width: 80%;
+    height: 40px;
+    border: none;
+    box-shadow: 0 0 2px 2px inset rgba(0,0,0,.2);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.labelFilter {
+    margin-bottom: 0px;
+	width: 30%;
+	font-size: 11px;
+	margin-top: 7px;
+}
+
+.selectFilter {
+    width: 70%;
+    border: none;
+    box-shadow: 0 0 2px 2px inset rgba(0,0,0,.3);
+    border-radius: 4px;
+    height: 30px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.group-ben {
+  position:relative;
+  width: 100%;
+}
+
+.group-ben-md {
+  position:relative;
+  width: 60%;
+}
+
+.group-ben-md2 {
+  position:relative;
+  width: 70%;
+}
+
+
+.group-ben-sm {
+  position:relative;
+  width: 20%;
+}
+
+.group-ben-sm2 {
+  position:relative;
+  width: 50%;
+}
+
+#tabs input, #tabs select {
+  font-family: 'Poppins' !important;
+}

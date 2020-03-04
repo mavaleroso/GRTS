@@ -1,0 +1,79 @@
+.tbl-dash {
+	font-size: 10px;
+	word-break: break-word !important;
+	width: 100% !important;
+	min-height: 300px; 
+}
+
+.chart-container {
+	width: 100%;
+}
+
+.dash-chart {
+	height: 300px !important;
+}
+
+.btn-dash {
+	background-color: #FC466B;
+	color: #fcfcfc;
+	font-size: 16px;
+}
+
+.btn-dash:hover {
+	background-color: #FC466B;
+	font-size: 16px;
+}
+
+.btn-dash.active {
+	background-color: #FC466B;
+	color: #222;
+}
+
+.btn-dash:active {
+   box-shadow: inset 1px 1px 10px #333;
+}
+
+.d-n {
+	display: none;
+}
+
+.card-footer {
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.card-footer:hover {
+	background-color: #2F3B53;
+	color: #fff;
+}
+
+#doughnut1, #doughnut2, #barChart2, #pieChart2 {
+	height: 300px;
+}
+
+
+.card-chart {
+	min-height: 360px !important;
+	display: block;
+}
+
+.card-body p, .card-body h3 {
+	color: #fcfcfc;
+}
+
+canvas {
+    margin: 0 auto !important;
+}
+
+.display-4 {
+	color: #444;
+}
+
+.card-stats, .card-stats .card-body {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.card {
+	border-radius: 5px !important;
+}

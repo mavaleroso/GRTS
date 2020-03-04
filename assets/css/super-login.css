@@ -1,0 +1,135 @@
+@font-face {
+  font-family: poppins;
+  src: url(font/Poppins-Regular.otf);
+}
+
+html,
+body {
+  height: 100%;
+  font-family: poppins;
+}
+
+.login-form {
+  width: 400px;
+  margin: auto;
+}
+
+.login-input {
+  margin: auto;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  padding: 8px;
+  width: 80%;
+  margin-bottom: 12px;
+  box-shadow: inset 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+  background: #fcfcfc;
+  text-align: center;
+}
+
+.login-input:focus {
+  outline:none;
+}
+
+.btn-login {
+  margin:auto;
+  display: block;
+  margin-top: 20px;
+}
+
+.img-holder {
+  box-shadow: inset 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+  background: #fcfcfc;
+  margin: auto;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.system-logo {
+  width: 150px;
+  margin: auto;
+  display: block;
+}
+
+.edition {
+  font-family: poppins;
+  font-size: 12px;
+  color: #777;
+  text-shadow: 0px 1px 1px #aaa;
+}
+
+.system-title {
+  text-align: center;
+  font-family: poppins;
+  font-size: 15px;
+  color: #666;
+  margin-top: 13px;
+  text-shadow: 0px 1px 2px #aaa;
+}
+
+.login-footer {
+  font-size: 12px;
+  font-family: poppins;
+  color: #777;
+}
+
+.login-field {
+  background: #eee;
+  padding: 6px 0px;
+  width: 76%;
+  margin: auto;
+  border-radius: 30px;
+  font-family: poppins;
+}
+
+.login-field i {
+  padding: 5px;
+}
+
+.login-field input {
+  overflow: visible;
+  width: 80%;
+  font-size: 12px;
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 10px;
+}
+
+i {
+  color:gray;
+  margin-left: 10px;
+}
+
+.btn-submit {
+  display: block;
+  margin: auto;
+  margin-top: 11px;
+  font-family: poppins;
+  font-size: 12px;
+  width: 100px;
+  height: 35px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  background: #777;
+  color: #f2f2f2;
+  box-shadow: 0 2px 2px #333;
+  transition: all .3s;
+  outline: none;
+}
+
+.btn-submit:hover {
+  background: rgba(56,74,204,.6);
+}
+
+.flash-warning {
+  text-align: center;
+  font-family: arial;
+  font-weight: bold;
+  color: gray;
+  font-size: 11px;
+}

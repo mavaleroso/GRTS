@@ -1,0 +1,358 @@
+.message-form {
+}
+
+#inbox, .conversation {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#inbox {
+    height: 380px;
+}
+
+.messages-area {
+	height: 80vh;
+    overflow: hidden;
+}
+
+.messages-history {
+	height: 80vh;
+}
+
+#msg-hist {
+    height: 62vh;
+}
+
+.messages-input {
+	height: 100px;
+}
+
+.messages-input textarea {
+	resize: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 1px 3px 2px inset #aaa;
+    padding: 15px;
+    width: 100%;
+}
+
+.messages-input .textarea {
+    width: 87%;
+}
+
+
+.messages-input textarea:focus {
+	outline: none;
+}
+
+.message-item {
+	display: flex;
+    border-bottom: 1px solid #aaa;
+    padding: 15px;
+    height: 80px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.msg-description .msg-desc {
+	display: block;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666;
+    margin-top: 3px;
+}
+
+.msg-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.msg-image2 {
+    height: 50px;
+    margin: auto;
+    display: block;
+}
+
+.msg-description {
+    padding-left: 14px;
+    width: 80%;
+}
+
+
+
+.new-msg-description {
+    width: 80%;
+    padding: 13px;
+}
+
+.message-item:hover {
+	background: #eee;
+}
+
+.msg-search {
+    width: 90%;
+    margin: auto;
+    border-radius: 30px;
+    border: 1px solid #eee;
+
+}
+
+.msg-search input {
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    padding: 2px 9px;
+}
+
+.loader {
+    position: relative;
+    /* height: 20px; */
+    /* width: 20px; */
+    display: inline-block;
+    animation: around 5.4s infinite;
+    height: 0;
+    width: 0;
+    padding: 9px;
+}
+
+@keyframes around {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.loader::after, .loader::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #333 #333 transparent transparent;
+    border-style: solid;
+    border-radius: 20px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    animation: around 0.7s ease-in-out infinite;
+}
+
+.loader::after {
+    animation: around 0.7s ease-in-out 0.1s infinite;
+    background: transparent;
+}
+
+.msg-name {
+    font-size: 12px;
+    color: #3F5EFB;
+    margin-bottom: -3px;
+}
+
+.new-msg-name {
+    font-size: 16px;
+    color: #555;
+}
+
+.msg-date {
+    float: right;
+    margin-top: -10px;
+    font-size: 11px;
+    color: gray;
+}
+
+.msg-error {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    line-height: 4;
+    color: gray;
+}
+
+
+
+.msg-info1 {
+    max-width: 300px;
+    width: max-content;
+    background: #3f5efb;
+    color: #fcfcfc;
+    padding: 15px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: default;
+    margin-bottom: 5px;
+}
+
+.msg-info2 {
+    max-width: 300px;
+    width: max-content;
+    background: #f5f5f5;
+    color: #555;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: default;
+    margin-bottom: 5px;
+}
+
+.msg-header {
+    height: 44px;
+}
+
+.btn-msg {
+    width: 93%;
+    white-space: nowrap;
+}
+
+#inbox::-webkit-scrollbar, .conversation::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+#inbox::-webkit-scrollbar-track, .conversation::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+}
+ 
+#inbox::-webkit-scrollbar-thumb, .conversation::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.convo-img {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    border: 10px solid #f8f8f8;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.convo-img img{
+    height: 110px;
+    margin: auto;
+    display: inline-block;
+    background-position: center;
+}
+
+.convo-name .convo-header-img {
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.convo-name img {
+    height: 26px;
+    margin: auto;
+    display: inline-block;
+    background-position: center;
+}
+
+.convo-name .name2 {
+    margin: 7px;
+}
+
+.convo-access {
+    width: 100%;
+    text-align: center;
+    color: #555;
+}
+
+.convo-name2 {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.msg-input-area {
+    /*background: #eee;*/
+    height: 75px;
+    padding: 17px 40px;
+}
+
+.msg-input-area .msg-input {
+    width: 90%;
+    border: none;
+    border-radius: 30px;
+    background: transparent;
+    margin-right: 10px;
+    overflow: hidden;
+    color: #fcfcfc;
+    border: 1px solid #eee;
+}
+
+.msg-input-area .msg-input textarea {
+    width: 90%;
+    margin: auto;
+    display: block;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 12px;
+}
+
+.msg-input-area .msg-input textarea::-webkit-scrollbar, .conversation::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+.msg-input-area .msg-input textarea::-webkit-scrollbar-track, .conversation::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+}
+ 
+.msg-input-area .msg-input textarea::-webkit-scrollbar-thumb, .conversation::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.msg-input-area button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    margin-left: auto;
+    background: #fcfcfc;
+    outline: none;
+}
+
+.main-convo {
+    width: fit-content;
+    margin: auto;
+    display: block;
+    margin-top: 20%;
+}
+
+.main-convo i {
+    font-size: 100px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.main-convo p {
+    color: #555;
+}

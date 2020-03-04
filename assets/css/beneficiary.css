@@ -1,0 +1,86 @@
+#example {
+  font-size: 12px;
+  white-space: nowrap;
+}
+/* table.dataTable tbody th,
+table.dataTable tbody td {
+    white-space: nowrap;
+} */
+
+/* .td-bkg {
+  background: #fcfcfc;
+} */
+
+table.dataTable.table-striped.DTFC_Cloned tbody tr:nth-of-type(odd) {
+        background: #F3F3F3;
+}
+
+table.dataTable.table-striped.DTFC_Cloned tbody tr:nth-of-type(even) {
+        background: white;
+}
+
+.dataTables_wrapper {
+    font-size: 11px;
+}
+
+
+.group-ben {
+  position:relative;
+  width: 100%;
+}
+
+.group-ben-md {
+  position:relative;
+  width: 60%;
+}
+
+.group-ben-md2 {
+  position:relative;
+  width: 70%;
+}
+
+
+.group-ben-sm {
+  position:relative;
+  width: 20%;
+}
+
+.group-ben-sm2 {
+  position:relative;
+  width: 50%;
+}
+
+.fon-con {
+  font-size: 15px !important;
+}
+
+.input-txt-dis {
+  cursor: default;
+}
+
+.action-edit {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.action-edit:hover {
+  color:#3F5EFB;
+}
+
+.filterField {
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 2px 2px inset rgba(0,0,0, .3);
+  padding: 5px;
+  height: 30px
+  font-size: 12px;
+}
+
+.f-12 {
+  font-size: 12px;
+  margin-top: 6px;
+}

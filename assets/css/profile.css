@@ -1,0 +1,269 @@
+
+.card1 {
+    min-height: 500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block !important;
+}
+
+.card2 {
+    margin-bottom: 20px;
+}
+
+.card2, .card3 {
+    /* height: 240px; */
+    border-radius: 10px;
+}
+
+.display-n {
+    display: none;
+}
+
+.font-white {
+    color:transparent;
+}
+
+.img-holder {
+    border: 3px solid #333;
+    height: 170px;
+    border-radius: 50%;
+    width: 170px;
+    margin: auto;
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.img-holder img {
+    width: 170px;
+    overflow: hidden;
+}
+
+.card1 p {
+    text-align: center;
+    position: relative;
+    top: 3px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.info {
+    padding: 0 2rem;
+}
+
+.info .uname {
+    position: absolute;
+    left: 0px;
+}
+
+.card-field {
+    border: none;
+    outline: none !important;
+    background: transparent !important;
+}
+
+.credential {
+    padding: 0 2rem;
+}
+
+.card1 .input-group-text {
+    background: transparent;
+    border: none;
+}
+
+
+.input-style-4 {
+    width: 100%;
+    outline: none;
+    border: none;
+    line-height: 40px;
+    background: #eee;
+    /* box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08); */
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 13px;
+    color: #666;
+    transition: all 0.4s ease;
+}
+
+.input-style-5 {
+    width: 100%;
+    outline: none;
+    border: none;
+    line-height: 30px;
+    background: #eee;
+    /* box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08); */
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 13px;
+    color: #666;
+    transition: all 0.4s ease;
+}
+
+.input-active {
+    box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.08) !important;
+}
+
+.edit-btn2, .edit-btn3{
+    float: right;
+    position: relative;
+    top: -30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.edit-con {
+    font-size: 1rem;
+    transition: all .3s;
+}
+
+.edit-btn2:hover, .edit-con:hover {
+    text-shadow: 0 0 1px #222;
+}
+
+.card3 label {
+    font-size:12px;
+}
+
+.card3-title {
+    margin-bottom: -17px;
+}
+
+
+.icon-container {
+    top: calc(50% - 10px);
+}
+
+.loader {
+    position: relative;
+    /* height: 20px; */
+    /* width: 20px; */
+    display: inline-block;
+    animation: around 5.4s infinite;
+    height: 0;
+    width: 0;
+    padding: 9px;
+}
+
+@keyframes around {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.loader::after, .loader::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: #333 #333 transparent transparent;
+    border-style: solid;
+    border-radius: 20px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    animation: around 0.7s ease-in-out infinite;
+}
+
+.loader::after {
+    animation: around 0.7s ease-in-out 0.1s infinite;
+    background: transparent;
+}
+
+.con-width {
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}
+
+.form-img {
+    margin:auto;
+    margin-top: 10px;
+    width: 210px;
+}
+
+.input-img {
+    width: 200px;
+}
+
+.btn-img {
+    background: #007bff;
+    width: 100px;
+    height: 30px;    
+    padding: 5px !important;
+    font-size: 11px !important;
+    color: #fcfcfc;
+    cursor: pointer;
+    overflow: hidden !important;
+}
+
+.search-result {
+  font-size: 12px;
+  width: auto !important;
+}
+
+.search-loader {
+  height: 100px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: -40px;
+  margin-bottom: -80px;
+}
+
+.search-location {
+  font-size: 13px;
+  text-align: center;
+}
+
+.search-location a {
+  cursor: pointer;
+  padding: 5px;
+  text-align: left;
+}
+
+.search-location a:hover {
+  background: #eee;
+}
+
+
+.dropdown-menu-arrow {
+  top: -25px;
+  left: -50px;
+  width: 0;
+  height: 0;
+  position: relative;
+}
+
+.dropdown-menu-arrow:before,
+.dropdown-menu-arrow:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 7px 8px;
+  border-style: solid;
+  border-color: transparent;
+  z-index: 1001;
+}
+.dropdown-menu-arrow:after {
+  bottom: -18px;
+  right: -8px;
+  border-bottom-color: #fff;
+}
+.dropdown-menu-arrow:before {
+  bottom: -17px;
+  right: -8px;
+  border-bottom-color: rgba(0,0,0,.15);
+}
+
+.margin-drop {
+  margin-top: 45px !important;
+}

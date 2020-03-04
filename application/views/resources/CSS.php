@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/jquery-ui.css">
+<link rel="stylesheet" href="<?php echo base_url() ?>assets/fontawesome/css/all.css">
+<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/summernote.css">
+<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/customscrollbar.css">
+<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/datatables.css">
+<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/colReorder.css">
+<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/animate.css">
+<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/chart.css">

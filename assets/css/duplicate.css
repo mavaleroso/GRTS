@@ -1,0 +1,53 @@
+.dataTables_wrapper {
+    font-size: 12px;
+}
+
+.view, .approve, .discard {
+	color: #222;	
+	transition: all .3s;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+.view:hover, .view:focus {
+	color: blue;
+}
+
+.approve:hover, .approve:focus {
+	color: green;
+}
+
+.discard:hover, .discard:focus {
+	color: red;
+}
+
+.group-ben {
+  position:relative;
+  width: 100%;
+}
+
+.group-ben-md {
+  position:relative;
+  width: 60%;
+}
+
+.group-ben-md2 {
+  position:relative;
+  width: 70%;
+}
+
+
+.group-ben-sm {
+  position:relative;
+  width: 20%;
+}
+
+.group-ben-sm2 {
+  position:relative;
+  width: 50%;
+}
+
+.input-txt-dis {
+  cursor: default;
+}
+
