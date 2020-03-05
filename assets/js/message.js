@@ -73,7 +73,9 @@ function inbox() {
 							if (Img == null) {
 								Img = 'user-man.png';
 							}
-							$('#inbox').append('<div class="message-item" onclick="message_convo(\'' + v.m_code +'\', '+newID+', \'' + Img +'\', \'' + name +'\',  \'' + access +'\')">' +
+
+							if (v.is_seen == 0) {
+								$('#inbox').append('<div class="message-item unread" onclick="message_convo(\'' + v.m_code +'\', '+newID+', \'' + Img +'\', \'' + name +'\',  \'' + access +'\')">' +
 												'<div class="msg-image">' +
 												'<img class="msg-image2" src="'+$base_url+'assets/user-img/'+ Img +'" >' +
 												'</div>' +
@@ -83,6 +85,19 @@ function inbox() {
 												'<p class="msg-date">'+ v.msgDate +'</p>' +
 												'</div>' +
 												'</div>');
+							} else {
+								$('#inbox').append('<div class="message-item" onclick="message_convo(\'' + v.m_code +'\', '+newID+', \'' + Img +'\', \'' + name +'\',  \'' + access +'\')">' +
+												'<div class="msg-image">' +
+												'<img class="msg-image2" src="'+$base_url+'assets/user-img/'+ Img +'" >' +
+												'</div>' +
+												'<div class="msg-description">' +
+												'<p class="msg-name">'+name+'</p>' +
+												'<p class="msg-desc">'+ v.m_message +'</p>' +
+												'<p class="msg-date">'+ v.msgDate +'</p>' +
+												'</div>' +
+												'</div>');
+							}
+							
 						});
 					}
 			},

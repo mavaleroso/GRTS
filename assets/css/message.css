@@ -356,3 +356,7 @@
 .main-convo p {
     color: #555;
 }
+
+.unread {
+    background: #eee !important;
+}

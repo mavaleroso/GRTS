@@ -37,8 +37,6 @@ class Message extends CI_Controller{
     $id = $this->session->userdata('user_id');
     $code = $this->input->get('code');
 
-
-
     $results = $this->Model_message->query("SELECT m.*, DATE_FORMAT(m.m_date, '%m-%d-%Y %h:%i %p') as 'msgDate', m.is_seen as 'seen', m.m_to as 'toUser', a.user_id as 'userID1' ,b.user_id as 'userID2', a.fullname as 'name1', b.fullname as 'name2', a.avatar as 'avatar1', b.avatar as 'avatar2' FROM message AS m LEFT JOIN user_info as a ON m.m_from = a.user_id LEFT JOIN user_info as b ON m.m_to = b.user_id WHERE m.m_code = '$code' ORDER BY m.m_date ASC")->result();
 
     $results1 = $this->Model_message->query("SELECT m.*, m.is_seen as 'seen', m.m_to as 'toUser', a.user_id as 'userID1' ,b.user_id as 'userID2', a.fullname as 'name1', b.fullname as 'name2', a.avatar as 'avatar1', b.avatar as 'avatar2' FROM message AS m LEFT JOIN user_info as a ON m.m_from = a.user_id LEFT JOIN user_info as b ON m.m_to = b.user_id WHERE m.m_code = '$code' AND m.is_seen = 0 ORDER BY m.m_date ASC")->result();

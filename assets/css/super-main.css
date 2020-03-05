@@ -175,7 +175,7 @@ nav .nav-item a.active {
 }
 
 .close:active, .close:focus {
-  outline: none; !important;
+  outline: none !important;
 }
 
 .setting-lbl {
@@ -310,7 +310,8 @@ nav .nav-item a.active {
 
 .user-area:hover {
   background: rgba(0,0,0,.2);
-  color: #fcfcfc;
+  color: #333;
+  font-weight: bold;
 }
 
 .user-img {
@@ -769,4 +770,8 @@ nav .nav-item a.active {
   font-size: 15px;
   margin-top: 12px;
   text-shadow: 0 1px 1px #bbb;
+}
+
+.unread {
+  background: #eee !important;
 }

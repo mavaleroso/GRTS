@@ -62,7 +62,9 @@ $(document).ready(function() {
 							if (Img == null) {
 								Img = 'default.png'; 
 							}
-							$('#recent-messages').append('<div class="user-area d-flex" onclick="message_convo(\'' + v.m_code +'\', '+newID+', \'' + Img +'\', \'' + name +'\',  \'' + access +'\')">' +
+
+							if (v.is_seen == 0) {
+								$('#recent-messages').append('<div class="user-area d-flex unread" onclick="message_convo(\'' + v.m_code +'\', '+newID+', \'' + Img +'\', \'' + name +'\',  \'' + access +'\')">' +
 														'<div class="user-img-area mr-auto">' +
 														'<div class="user-img">' +
 														'<img src="' + $base_url + 'assets/user-img/'+ Img +'" >' +
@@ -74,6 +76,20 @@ $(document).ready(function() {
 														'<p class="msg-time text-right m-1">' + v.msgDate + '</p>' +
 														'</div>' +
 														'</div>');
+							} else {
+								$('#recent-messages').append('<div class="user-area d-flex" onclick="message_convo(\'' + v.m_code +'\', '+newID+', \'' + Img +'\', \'' + name +'\',  \'' + access +'\')">' +
+														'<div class="user-img-area mr-auto">' +
+														'<div class="user-img">' +
+														'<img src="' + $base_url + 'assets/user-img/'+ Img +'" >' +
+														'</div>' +
+														'</div>' +
+														'<div class="user-text-area ml-auto">' +
+														'<p class="msg-user m-0">' + name + '</p>' +
+														'<p class="msg-content m-0">' + v.m_message + '</p>' +
+														'<p class="msg-time text-right m-1">' + v.msgDate + '</p>' +
+														'</div>' +
+														'</div>');
+							}
 						});
 					}
 				},

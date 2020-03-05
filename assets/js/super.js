@@ -11,7 +11,7 @@ $(document).ready(function() {
   	});
 
 	dashboard = () => {
-		window.history.pushState("test", "test", "/GRS/super/dashboard");
+		window.history.pushState("test", "test", "/GRTS/super/dashboard");
       	document.title = "GRTS Super Dashboard";
 
       	$('.nav-dash').addClass('active');
@@ -37,7 +37,7 @@ $(document).ready(function() {
 	}
 
 	requests = () => {
-		window.history.pushState("test", "test", "/GRS/super/requests");
+		window.history.pushState("test", "test", "/GRTS/super/requests");
       	document.title = "GRTS Super Request";
 
       	$('.nav-dash').removeClass('active');
@@ -63,7 +63,7 @@ $(document).ready(function() {
 	}
 
 	logs = () => {
-		window.history.pushState("test", "test", "/GRS/super/logs");
+		window.history.pushState("test", "test", "/GRTS/super/logs");
       	document.title = "GRTS Super Logs";
 
       	$('.nav-dash').removeClass('active');
@@ -88,7 +88,7 @@ $(document).ready(function() {
 	}
 
 	messages = () => {
-		window.history.pushState("test", "test", "/GRS/super/messages");
+		window.history.pushState("test", "test", "/GRTS/super/messages");
       	document.title = "GRTS Super Messages";
 
       	$('.nav-dash').removeClass('active');
