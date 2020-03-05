@@ -677,7 +677,7 @@ function btn_submit() {
                 $('#myModal3 .modal-header .close').remove();
                 $('#myModal3 .modal-title').html('<i class="fas text-danger fa-exclamation-triangle mr-2"></i>Duplicate Error');
                 $('#myModal3 .modal-body').html('<p class="text-center">The Grievance Data is already exist and still Ongoing this year.</p><div class="timerDiv"></div>');
-                $('#myModal3 .modal-body .timerDiv').html('<p class="text-center">Please check again the information.</p>');
+                $('#myModal3 .modal-body .timerDiv').html('<p class="text-center">Please check the information again!</p>');
                 
                 setTimeout(() => {
                   $('#myModal').modal('toggle');

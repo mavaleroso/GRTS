@@ -254,7 +254,7 @@ class Super extends CI_Controller{
   }
 
   public function get_subCategory() {
-    $id = $this->input->post('id');
+    $id = $this->input->get('id');
     $query = $this->Model_sub_category->query("SELECT * FROM sub_category INNER JOIN category on category.category_id = sub_category.category_id WHERE sub_category.sub_category_id = '$id'")->row();
     echo json_encode($query);
   }
@@ -806,7 +806,7 @@ class Super extends CI_Controller{
     $id = $this->session->userdata('user_id');
     $name = $this->input->get('search');
 
-    $results = $this->Model_message->query("SELECT m.*, DATE_FORMAT(m.m_date, '%m-%d-%Y %h:%i %p') as 'msgDate',a.user_id as 'userID1' ,b.user_id as 'userID2', a.fullname as 'name1', b.fullname as 'name2', a.avatar as 'avatar1', b.avatar as 'avatar2', a.access as 'access1', b.access as 'access2' FROM message as m LEFT JOIN user_info as a ON m.m_from = a.user_id LEFT JOIN user_info as b ON m.m_to = b.user_id WHERE (a.fullname LIKE '%$name%' OR b.fullname LIKE '%$name%') AND m.m_id IN (SELECT max(m_id) as id FROM message WHERE (m_from = '$id' OR m_to = '$id') GROUP BY m_code) ORDER BY m.m_date DESC")->result();
+    $results = $this->Model_message->query("SELECT m.*, a.user_id as 'userID1' ,b.user_id as 'userID2', a.fullname as 'name1', b.fullname as 'name2', a.avatar as 'avatar1', b.avatar as 'avatar2', a.access as 'access1', b.access as 'access2' FROM message as m LEFT JOIN user_info as a ON m.m_from = a.user_id LEFT JOIN user_info as b ON m.m_to = b.user_id WHERE (a.fullname LIKE '%$name%' OR b.fullname LIKE '%$name%') AND m.m_id IN (SELECT max(m_id) as id FROM message WHERE (m_from = '$id' OR m_to = '$id') GROUP BY m_code) ORDER BY m.m_date DESC")->result();
 
     echo json_encode($results);
   }

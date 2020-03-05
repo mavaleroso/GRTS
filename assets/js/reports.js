@@ -49,6 +49,17 @@ var tblAllData = $('#tbl-allData').DataTable({
     lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
 });
 
+dateTimeNow = () => {
+	var today = new Date();
+	var dd = String(today.getDate()).padStart(2, '0');
+	var mm = String(today.getMonth() + 1).padStart(2, '0');
+	var yyyy = today.getFullYear();
+	var hh = today.getHours();
+	var min = today.getMinutes();
+	
+	return today = mm + '-' + dd + '-' + yyyy + ' ' + hh + '-' +min;
+}
+
 var resTable =  $('#resolvedTable').DataTable( {
       processing: true,
       serverSide: true,
@@ -71,7 +82,7 @@ var resTable =  $('#resolvedTable').DataTable( {
                 text: 'Excel',
                 className: 'btn-export d-none',
                 titleAttr: 'Export to excel file',
-                title: 'Report Data',
+                title: "Report Data List " + dateTimeNow(),
                 footer: true,
                 multitables:{
                   categoryTable: 'Category', 

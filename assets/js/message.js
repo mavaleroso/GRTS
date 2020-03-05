@@ -74,7 +74,7 @@ function inbox() {
 								Img = 'user-man.png';
 							}
 
-							if (v.is_seen == 0) {
+							if (v.is_seen == 0 && v.m_to == $sessionID) {
 								$('#inbox').append('<div class="message-item unread" onclick="message_convo(\'' + v.m_code +'\', '+newID+', \'' + Img +'\', \'' + name +'\',  \'' + access +'\')">' +
 												'<div class="msg-image">' +
 												'<img class="msg-image2" src="'+$base_url+'assets/user-img/'+ Img +'" >' +
@@ -82,7 +82,7 @@ function inbox() {
 												'<div class="msg-description">' +
 												'<p class="msg-name">'+name+'</p>' +
 												'<p class="msg-desc">'+ v.m_message +'</p>' +
-												'<p class="msg-date">'+ v.msgDate +'</p>' +
+												'<p class="msg-date">'+ v.m_date +'</p>' +
 												'</div>' +
 												'</div>');
 							} else {
@@ -93,7 +93,7 @@ function inbox() {
 												'<div class="msg-description">' +
 												'<p class="msg-name">'+name+'</p>' +
 												'<p class="msg-desc">'+ v.m_message +'</p>' +
-												'<p class="msg-date">'+ v.msgDate +'</p>' +
+												'<p class="msg-date">'+ v.m_date +'</p>' +
 												'</div>' +
 												'</div>');
 							}
@@ -205,6 +205,7 @@ function message_convo(code, id, image, name2, access) {
 			dataType: 'json',
 			data: {code: code},
 			success: results => {
+				inbox();
 				$('#load-convo').remove();
 				$('#msg-content').attr('disabled', false);
 				$('.btn-send').attr('disabled', false);

@@ -63,7 +63,7 @@ $(document).ready(function() {
 								Img = 'default.png'; 
 							}
 
-							if (v.is_seen == 0) {
+							if (v.is_seen == 0 && v.m_to == $userSessionID) {
 								$('#recent-messages').append('<div class="user-area d-flex unread" onclick="message_convo(\'' + v.m_code +'\', '+newID+', \'' + Img +'\', \'' + name +'\',  \'' + access +'\')">' +
 														'<div class="user-img-area mr-auto">' +
 														'<div class="user-img">' +
@@ -73,7 +73,7 @@ $(document).ready(function() {
 														'<div class="user-text-area ml-auto">' +
 														'<p class="msg-user m-0">' + name + '</p>' +
 														'<p class="msg-content m-0">' + v.m_message + '</p>' +
-														'<p class="msg-time text-right m-1">' + v.msgDate + '</p>' +
+														'<p class="msg-time text-right m-1">' + v.m_date + '</p>' +
 														'</div>' +
 														'</div>');
 							} else {
@@ -86,7 +86,7 @@ $(document).ready(function() {
 														'<div class="user-text-area ml-auto">' +
 														'<p class="msg-user m-0">' + name + '</p>' +
 														'<p class="msg-content m-0">' + v.m_message + '</p>' +
-														'<p class="msg-time text-right m-1">' + v.msgDate + '</p>' +
+														'<p class="msg-time text-right m-1">' + v.m_date + '</p>' +
 														'</div>' +
 														'</div>');
 							}
@@ -173,6 +173,7 @@ $(document).ready(function() {
 				data: {code: code},
 				success: results => {
 					$('.gif-loader').remove();
+					recent_messages();
 					$.each(results, function(k, v) {
 						if (v.m_from == $userSessionID) {
 							$('.convo-area').append('<p class="ml-auto msg-right righttip"  title="'+v.msgDate+'">' + v.m_message + '</p>');

@@ -6,7 +6,13 @@ $(document).ready(function() {
 	    order: [],
 	    responsive: true,
 	    scrollX: true,
-    	scrollX: "100%",
+		scrollX: "100%",
+		columnDefs: [
+			{
+				targets: [ 4 ],
+				orderable: false
+			}
+		],
     	lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
     	ajax: {
 	        url: $base_url + 'Super/fetch_pending_requests',

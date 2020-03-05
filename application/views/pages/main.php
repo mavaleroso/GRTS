@@ -190,7 +190,7 @@
 
     <!-- The Modal 2-->
     <div class="modal fade" id="myModal2">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog">
         <div class="modal-content">
           <!-- Modal Header -->
           <div class="modal-header modal-header2 text-center">

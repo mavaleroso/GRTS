@@ -108,7 +108,7 @@
   </div>
 
   <div id="myModal2" class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+    <div class="modal-dialog modal-sm" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <p class="modal-title"></p>

@@ -1,6 +1,5 @@
 $(document).ready(() => {
 
-
 	countTable = () => {
 		$.ajax({
 			url: $base_url + 'Super/count_tbl',
@@ -22,7 +21,6 @@ $(document).ready(() => {
 
 	countTable();
 
-
 	newDataTable = (table, controller) => {
 		$(table).DataTable({
 			dom: '<"toolbar float-left">frtip',
@@ -30,7 +28,13 @@ $(document).ready(() => {
 			bInfo: false,
 			scrollCollapse: true,
 			processing: true, 
-		    serverSide: true, 
+			serverSide: true, 
+			columnDefs: [
+				{
+					targets: [ -1 ],
+					orderable: false
+				}
+			],
 		    order: [], 
 		    ajax: {
 		        url: $base_url + 'Super/' + controller,
@@ -1022,7 +1026,7 @@ $(document).ready(() => {
 	subCategories_edit = id => {
 		$.ajax({
 			url: $base_url + 'super/get_subCategory',
-			method: 'post',
+			method: 'get',
 			dataType: 'json',
 			data: {id: id},
 			success: result => {

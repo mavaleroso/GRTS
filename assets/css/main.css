@@ -1161,3 +1161,7 @@ table.dataTable.table-striped.DTFC_Cloned tbody tr:nth-of-type(even) {
   background-color: white;
 }
 
+.dataTables_processing {
+  top: 64px !important;
+  z-index: 11000 !important;
+}

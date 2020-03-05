@@ -775,3 +775,8 @@ nav .nav-item a.active {
 .unread {
   background: #eee !important;
 }
+
+.dataTables_processing {
+  top: 64px !important;
+  z-index: 11000 !important;
+}
