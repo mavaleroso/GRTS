@@ -752,7 +752,7 @@ $('#brgy').keypress(function() {
           $('.search-result').html('<img src="'+ $base_url +'/assets/css/images/loading2.gif" class="search-loader" />');
             $.ajax({
                 url:$base_url + "main/search_brgy",
-                method:"POST",
+                method:"GET",
                 data:{search: search},
                 success:function(data){
                   var d = JSON.parse(data);
@@ -784,7 +784,7 @@ $("#city").keypress(function(){
     $('.list-mun-city').html('<img src="'+ $base_url +'/assets/css/images/loading2.gif" class="search-loader" />');
     $.ajax({
         url:$base_url + "main/search_mun_city",
-        method:"POST",
+        method:"GET",
         data:{search: search},
         success:function(data){
           var d = JSON.parse(data);
@@ -815,7 +815,7 @@ $("#province").keypress(function(){
     $('.list-province').html('<img src="'+ $base_url +'/assets/css/images/loading2.gif" class="search-loader" />');
     $.ajax({
         url:$base_url + "main/search_provinces",
-        method:"POST",
+        method:"GET",
         data:{search: search},
         success:function(data){
           var d = JSON.parse(data);
@@ -843,7 +843,7 @@ $("#region").keypress(function(){
     $('.list-region').html('<img src="'+ $base_url +'/assets/css/images/loading2.gif" class="search-loader" />');
     $.ajax({
         url:$base_url + "main/search_regions",
-        method:"POST",
+        method:"GET",
         data:{search: search},
         success:function(data){
           var d = JSON.parse(data);
